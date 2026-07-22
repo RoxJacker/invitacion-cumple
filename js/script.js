@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---------- MAPA ----------
   const { lat, lng } = CONFIG.map;
-  document.getElementById("mapFrame").src =
-    `https://www.google.com/maps?q=${lat},${lng}&output=embed`;
+  // El src del mapa está definido directamente en el HTML
+  // document.getElementById("mapFrame").src = ...;
   document.getElementById("mapLink").href =
-    `https://www.google.com/maps?q=${lat},${lng}`;
+    `https://www.google.com/maps?q=20.420259344781424,-103.39564264688357`;
 
   // ---------- MESA DE REGALOS ----------
   const giftsList = document.getElementById("giftsList");
